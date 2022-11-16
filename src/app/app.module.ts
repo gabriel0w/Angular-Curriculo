@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FormatarTelefonePipe } from './pipes/formatar-telefone.pipe';
+import { FormatarCpfPipe } from './pipes/formatar-cpf.pipe';
 
 registerLocaleData(ptBr);
 
@@ -18,7 +19,8 @@ registerLocaleData(ptBr);
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    FormatarTelefonePipe
+    FormatarTelefonePipe,
+    FormatarCpfPipe
   ],
   imports: [
     BrowserModule,

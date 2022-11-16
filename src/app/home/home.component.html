@@ -106,7 +106,7 @@
           <tr *ngFor="let cliente of clientes">
             <th scope="row">{{cliente.id}}</th>
             <td>{{cliente.nome}}</td>
-            <td>{{cliente.cpf}}</td>
+            <td>{{cliente.cpf | formatarCpf}}</td>
             <td>{{cliente.telefone | formatarTelefone}}</td>
             <td>{{cliente.endereco}}</td>
             <td>{{cliente.data | date: 'dd/MM/yyyy'}}</td>
